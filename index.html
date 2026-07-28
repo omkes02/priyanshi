@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A warm, comforting space made just for Deepu. Relax, breathe, and feel cared for 💜">
+  <title>Comfort Cloud 🌸 For Deepu</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div id="floating-bg"></div>
+
+  <!-- Side Navigation -->
+  <nav id="side-nav">
+    <a href="#hero" class="nav-dot active" data-section="hero">
+      <span class="tooltip">Home</span>
+    </a>
+    <a href="#digital-hug" class="nav-dot" data-section="digital-hug">
+      <span class="tooltip">Hug</span>
+    </a>
+    <a href="#breathing" class="nav-dot" data-section="breathing">
+      <span class="tooltip">Breathe</span>
+    </a>
+    <a href="#tips" class="nav-dot" data-section="tips">
+      <span class="tooltip">Tips</span>
+    </a>
+    <a href="#affirmations" class="nav-dot" data-section="affirmations">
+      <span class="tooltip">Words</span>
+    </a>
+    <a href="#sounds" class="nav-dot" data-section="sounds">
+      <span class="tooltip">Sounds</span>
+    </a>
+    <a href="#yoga" class="nav-dot" data-section="yoga">
+      <span class="tooltip">Yoga</span>
+    </a>
+  </nav>
+
+  <!-- ============================================
+       SECTION 1: HERO
+       ============================================ -->
+  <section id="hero" class="section">
+    <div class="hero-content">
+      <p class="hero-greeting">just for you</p>
+      <h1 class="hero-title">
+        Hey <span class="name-highlight">Deepu</span>
+      </h1>
+      <p class="hero-subtitle">
+        I know it hurts right now, and I'm so sorry you're going through this.
+        But I made this little corner of the internet just to remind you — <strong>you're not alone</strong> 💜
+      </p>
+      <button class="hero-cta" onclick="document.getElementById('digital-hug').scrollIntoView({behavior: 'smooth'})">
+        Let me take care of you 🌸
+      </button>
+    </div>
+    <div class="hero-illustration">
+      <img src="hero.png" alt="Cute cozy illustration">
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2: DIGITAL HUG
+       ============================================ -->
+  <section id="digital-hug" class="section">
+    <h2 class="section-title reveal">Sending you a warm hug 💝</h2>
+    <p class="section-subtitle reveal">Tap the heart whenever you need some love</p>
+
+    <div class="hug-container reveal">
+      <button id="hug-btn" class="heart-btn" aria-label="Send a digital hug">💕</button>
+      <p class="hug-hint">tap me! 💗</p>
+      <div id="hug-message" class="hug-message"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3: BREATHING EXERCISE
+       ============================================ -->
+  <section id="breathing" class="section">
+    <h2 class="section-title reveal">Let's breathe together 🫧</h2>
+    <p class="section-subtitle reveal">The 4-7-8 technique helps calm your body and ease pain</p>
+
+    <div class="breathe-wrapper reveal">
+      <div class="breathe-container">
+        <div class="breathe-outer-ring"></div>
+        <div id="breathe-circle" class="breathe-circle">
+          <span id="breathe-text" class="breathe-text">Tap Start</span>
+          <span id="breathe-timer" class="breathe-timer"></span>
+        </div>
+      </div>
+
+      <div class="breathe-controls">
+        <button id="breathe-btn" class="breathe-btn">Start Breathing 🌬️</button>
+        <p id="breathe-count" class="breathe-count">Breaths completed: 0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4: SELF-CARE TIPS
+       ============================================ -->
+  <section id="tips" class="section">
+    <h2 class="section-title reveal">Little things that help 🍵</h2>
+    <p class="section-subtitle reveal">Gentle reminders for when you need them most</p>
+
+    <div class="tips-carousel-container reveal">
+      <div id="tips-carousel" class="tips-carousel">
+        <div class="tip-card">
+          <span class="tip-emoji">🔥</span>
+          <h3 class="tip-title">Heat Therapy</h3>
+          <p class="tip-desc">Grab that hot water bottle, Deepu! Heat relaxes your uterine muscles and eases those cramps like magic ✨</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-emoji">🍵</span>
+          <h3 class="tip-title">Herbal Tea</h3>
+          <p class="tip-desc">A warm cup of ginger or chamomile tea can naturally soothe cramps and calm your tummy 🌿</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-emoji">🍫</span>
+          <h3 class="tip-title">Comfort Food</h3>
+          <p class="tip-desc">Yes, you CAN have that chocolate! Dark chocolate has magnesium which helps with muscle relaxation 😋</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-emoji">💧</span>
+          <h3 class="tip-title">Stay Hydrated</h3>
+          <p class="tip-desc">Warm water with a squeeze of lemon can work wonders. Staying hydrated reduces bloating too! 🌊</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-emoji">🧴</span>
+          <h3 class="tip-title">Gentle Massage</h3>
+          <p class="tip-desc">Circular motions on your lower tummy with some lavender oil. Be gentle with yourself 💆‍♀️</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-emoji">🛁</span>
+          <h3 class="tip-title">Warm Bath</h3>
+          <p class="tip-desc">Add some epsom salts, light a candle, and let the warmth melt the pain away 🕯️</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-emoji">😴</span>
+          <h3 class="tip-title">Just Rest</h3>
+          <p class="tip-desc">Your body is working hard. It's completely okay to cancel plans and rest. You deserve it, Deepu 🛌</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-emoji">🥑</span>
+          <h3 class="tip-title">Magnesium Foods</h3>
+          <p class="tip-desc">Bananas, almonds, dark chocolate, and avocados are your best friends right now! 🍌</p>
+        </div>
+      </div>
+
+      <div class="carousel-nav">
+        <button id="carousel-left" class="carousel-arrow" aria-label="Scroll tips left">←</button>
+        <button id="carousel-right" class="carousel-arrow" aria-label="Scroll tips right">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5: AFFIRMATIONS
+       ============================================ -->
+  <section id="affirmations" class="section">
+    <h2 class="section-title reveal">Words you need to hear 💬</h2>
+    <p class="section-subtitle reveal">Because you deserve kindness, especially from yourself</p>
+
+    <div class="affirmation-card reveal">
+      <p id="affirmation-text" class="affirmation-text"></p>
+
+      <div class="affirmation-nav">
+        <button id="affirmation-prev" class="affirmation-arrow" aria-label="Previous affirmation">←</button>
+        <div id="affirmation-dots" class="affirmation-dots"></div>
+        <button id="affirmation-next" class="affirmation-arrow" aria-label="Next affirmation">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 6: COMFORT SOUNDS
+       ============================================ -->
+  <section id="sounds" class="section">
+    <h2 class="section-title reveal">Sounds to soothe you 🎵</h2>
+    <p class="section-subtitle reveal">Mix and match to create your perfect calming soundscape</p>
+
+    <div class="sounds-grid reveal">
+      <div class="sound-card" data-sound="rain">
+        <span class="sound-emoji">🌧️</span>
+        <span class="sound-name">Rain</span>
+        <input type="range" class="sound-slider" min="0" max="100" value="60" aria-label="Rain volume">
+      </div>
+      <div class="sound-card" data-sound="ocean">
+        <span class="sound-emoji">🌊</span>
+        <span class="sound-name">Ocean</span>
+        <input type="range" class="sound-slider" min="0" max="100" value="60" aria-label="Ocean volume">
+      </div>
+      <div class="sound-card" data-sound="wind">
+        <span class="sound-emoji">🍃</span>
+        <span class="sound-name">Wind</span>
+        <input type="range" class="sound-slider" min="0" max="100" value="60" aria-label="Wind volume">
+      </div>
+      <div class="sound-card" data-sound="fire">
+        <span class="sound-emoji">🔥</span>
+        <span class="sound-name">Fireplace</span>
+        <input type="range" class="sound-slider" min="0" max="100" value="60" aria-label="Fireplace volume">
+      </div>
+      <div class="sound-card" data-sound="birds">
+        <span class="sound-emoji">🐦</span>
+        <span class="sound-name">Birds</span>
+        <input type="range" class="sound-slider" min="0" max="100" value="60" aria-label="Birds volume">
+      </div>
+      <div class="sound-card" data-sound="night">
+        <span class="sound-emoji">🌙</span>
+        <span class="sound-name">Night</span>
+        <input type="range" class="sound-slider" min="0" max="100" value="60" aria-label="Night sounds volume">
+      </div>
+    </div>
+    <p class="sounds-note reveal">🎧 Headphones recommended for the best experience</p>
+  </section>
+
+  <!-- ============================================
+       SECTION 7: GENTLE YOGA
+       ============================================ -->
+  <section id="yoga" class="section">
+    <h2 class="section-title reveal">Gentle stretches that ease the pain 🧘</h2>
+    <p class="section-subtitle reveal">Simple poses you can do right in bed — tap a card to learn more</p>
+
+    <div class="yoga-grid reveal">
+      <div class="yoga-card" id="yoga-child">
+        <div class="yoga-header">
+          <span class="yoga-emoji">🧒</span>
+          <h3 class="yoga-name">Child's Pose</h3>
+          <p class="yoga-duration">Hold for 1-3 minutes</p>
+          <p class="yoga-expand-hint">tap to expand ↓</p>
+        </div>
+        <div class="yoga-details">
+          <div class="yoga-details-inner">
+            <div class="yoga-step">
+              <span class="yoga-step-num">1</span>
+              <span>Kneel on your bed or a soft surface with your knees slightly apart</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">2</span>
+              <span>Sit back on your heels and fold forward, resting your forehead down</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">3</span>
+              <span>Extend your arms forward or rest them alongside your body</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">4</span>
+              <span>Breathe deeply and let your lower back and tummy relax 💜</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="yoga-card" id="yoga-catcow">
+        <div class="yoga-header">
+          <span class="yoga-emoji">🐱</span>
+          <h3 class="yoga-name">Cat-Cow Stretch</h3>
+          <p class="yoga-duration">5-10 slow rounds</p>
+          <p class="yoga-expand-hint">tap to expand ↓</p>
+        </div>
+        <div class="yoga-details">
+          <div class="yoga-details-inner">
+            <div class="yoga-step">
+              <span class="yoga-step-num">1</span>
+              <span>Get on all fours with wrists under shoulders and knees under hips</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">2</span>
+              <span>Inhale: arch your back, lift your head (Cow) 🐮</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">3</span>
+              <span>Exhale: round your spine, tuck your chin (Cat) 🐱</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">4</span>
+              <span>Move slowly with your breath — this improves pelvic circulation ✨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="yoga-card" id="yoga-legs">
+        <div class="yoga-header">
+          <span class="yoga-emoji">🦵</span>
+          <h3 class="yoga-name">Legs Up the Wall</h3>
+          <p class="yoga-duration">Hold for 5-10 minutes</p>
+          <p class="yoga-expand-hint">tap to expand ↓</p>
+        </div>
+        <div class="yoga-details">
+          <div class="yoga-details-inner">
+            <div class="yoga-step">
+              <span class="yoga-step-num">1</span>
+              <span>Lie on your back next to a wall (or your headboard!)</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">2</span>
+              <span>Swing your legs up and rest them vertically against the wall</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">3</span>
+              <span>Let your arms rest by your sides, palms facing up</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">4</span>
+              <span>Close your eyes and breathe. This is deeply restorative 🌙</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="yoga-card" id="yoga-butterfly">
+        <div class="yoga-header">
+          <span class="yoga-emoji">🦋</span>
+          <h3 class="yoga-name">Reclining Butterfly</h3>
+          <p class="yoga-duration">Hold for 3-5 minutes</p>
+          <p class="yoga-expand-hint">tap to expand ↓</p>
+        </div>
+        <div class="yoga-details">
+          <div class="yoga-details-inner">
+            <div class="yoga-step">
+              <span class="yoga-step-num">1</span>
+              <span>Lie on your back with a pillow under your head</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">2</span>
+              <span>Bring the soles of your feet together, let your knees fall open</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">3</span>
+              <span>Place pillows under your knees for support if needed</span>
+            </div>
+            <div class="yoga-step">
+              <span class="yoga-step-num">4</span>
+              <span>Place a warm compress on your tummy and just breathe 🦋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <p class="footer-text">Made with all my love, just for you, Deepu</p>
+    <span class="footer-heart">💜</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
