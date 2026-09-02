@@ -62,7 +62,7 @@ function initDigitalHug() {
   const messageEl = document.getElementById('hug-message');
 
   const messages = [
-    "You're the strongest person I know, Deepu 💪✨",
+    "You're the strongest person I know, Priyanshi 💪✨",
     "This will pass, I promise. Hang in there 🌈",
     "You deserve all the chocolate in the world right now 🍫💜",
     "Sending you the warmest, biggest virtual hug 🤗",
@@ -70,7 +70,7 @@ function initDigitalHug() {
     "It's okay to cry, it's okay to rest, it's okay to just be 🌸",
     "Imagine me wrapping you in the softest blanket 🧸",
     "You are loved more than you could ever know 💕",
-    "Your strength inspires me, Deepu 🌻",
+    "Your strength inspires me, Priyanshi 🌻",
     "The world is so much better with you in it 🌍💜",
     "Take all the time you need. I'll be right here 🤍",
     "Hot water bottle + blanket + you = perfect combo 🔥🛌",
@@ -253,7 +253,7 @@ function initTipsCarousel() {
    ============================================ */
 function initAffirmations() {
   const affirmations = [
-    "You are so much stronger than you think, Deepu 🌟",
+    "You are so much stronger than you think, Priyanshi 🌟",
     "It's okay to not be okay today. Give yourself grace 💜",
     "Your body is doing something incredible, even when it hurts 🌸",
     "Take it slow. The world can wait for you 🌙",
@@ -261,7 +261,7 @@ function initAffirmations() {
     "Pain is temporary, but your beautiful strength is forever 💪",
     "Be as gentle with yourself as you would be with a friend 🤍",
     "You are worthy of love and care — especially your own 🌷",
-    "One moment at a time. You've got this, Deepu 🦋",
+    "One moment at a time. You've got this, Priyanshi 🦋",
     "The storm will pass and sunshine will return 🌈",
     "Right now, your only job is to take care of you 💆‍♀️",
     "You are so much more than what your body is going through 🌻",
